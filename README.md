@@ -30,9 +30,9 @@ Including an example of how to use your role (for instance, with variables passe
 License
 -------
 
-BSD
+MIT
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Parts of this role where adopted from the [ansible-x2go-mate](https://gitlab.com/morph027/ansible-x2go-mate) role by gitlab user `morph027`. See the previous [license](OLD-LICENSE).
