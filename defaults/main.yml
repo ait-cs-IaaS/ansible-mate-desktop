@@ -15,8 +15,6 @@ mate_recommends:
   - caja-seahorse
   - caja-sendto
   - caja-wallpaper
-  # frame work for defining and tracking users, sessions, seats
-  - consolekit
   # dconf cli utility
   - dconf-cli
   # archive manager
@@ -67,3 +65,5 @@ mate_recommends:
   - snapd
   # terminal
   - xterm
+
+mate_dconf_src: ./files/dconf
