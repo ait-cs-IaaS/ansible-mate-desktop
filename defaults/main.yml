@@ -2,6 +2,8 @@
 # defaults file for mate-desktop
 
 mate_recommends:
+  # vesa driver
+  - xserver-xorg-video-vesa
   #  window manager
   - lightdm
   # mate document viewer
