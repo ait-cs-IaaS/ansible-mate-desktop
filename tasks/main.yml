@@ -2,25 +2,26 @@
 # tasks file for mate-desktop
 
 - name: Install ubuntu mate desktop basic
-  apt:
+  ansible.builtin.apt:
     name: ubuntu-mate-desktop
     state: present
-    install_recommends: no
+    install_recommends: false
   tags: [install]
-  become: yes
+  become: true
 
 - name: Install additional desktop packages
-  apt:
+  ansible.builtin.apt:
     name: "{{ mate_recommends }}"
     state: present
   tags: [install]
-  become: yes
+  become: true
 
 - name: dconf settings (theming)
-  copy: 
+  ansible.builtin.copy:
     src: "{{ mate_dconf_src }}"
     dest: /etc
+    mode: preserve
   notify:
     - dconf-update
   tags: [install, config]
-  become: yes
+  become: true

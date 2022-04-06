@@ -51,7 +51,7 @@ mate_recommends:
   - mate-window-menu-applet
   - mate-window-title-applet
   # menu editing tool
-  - mozo 
+  - mozo
   # network manager
   - network-manager
   - network-manager-gnome
