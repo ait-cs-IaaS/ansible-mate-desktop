@@ -1,5 +1,5 @@
 ---
-# defaults file for mate-desktop
+mate_install_recommends: false
 
 mate_recommends:
   # vesa driver

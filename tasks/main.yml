@@ -5,7 +5,7 @@
   ansible.builtin.apt:
     name: ubuntu-mate-desktop
     state: present
-    install_recommends: false
+    install_recommends: "{{ mate_install_recommends }}"
   tags: [install]
   become: true
 
@@ -16,12 +16,12 @@
   tags: [install]
   become: true
 
-- name: dconf settings (theming)
+- name: Settings dconf (theming)
   ansible.builtin.copy:
     src: "{{ mate_dconf_src }}"
     dest: /etc
     mode: preserve
   notify:
-    - dconf-update
+    - Update dconf
   tags: [install, config]
   become: true

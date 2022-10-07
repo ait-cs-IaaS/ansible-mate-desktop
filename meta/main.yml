@@ -1,6 +1,7 @@
 galaxy_info:
-  author: benjamin.akhras
+  author: Benjamin Akhras
   role_name: mate_desktop
+  namespace: ait
   description: Install Mate Desktop
   license: GPL-3.0
   company: Austrian Institute of Technology

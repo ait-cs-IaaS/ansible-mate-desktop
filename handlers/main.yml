@@ -1,4 +1,3 @@
 ---
-# handlers file for mate-desktop
-- name: dconf-update
+- name: Update dconf
   ansible.builtin.command: /usr/bin/dconf update
